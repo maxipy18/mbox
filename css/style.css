@@ -400,3 +400,34 @@ section {
 .documentary{
     background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
 }
+
+
+/* ====== actors ====== */
+
+
+
+.actors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.actors-item {
+    flex: 0 0 14%;
+}
+
+.actors-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.actors-img__img {    
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
