@@ -286,4 +286,49 @@ section {
 }
 
 
+/* ======= movies ======= */
 
+
+
+.movies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+}
+
+.movies-item {
+    flex: 14%;
+}
+
+.movies-link {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.movies-link:hover {    
+    filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5));
+}
+
+.movies-item__img {
+    border-radius: 20px;
+}
+
+.movies-btn {
+    padding: 15px 30px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    cursor: pointer;    
+}
+
+.movies-btn:active {
+    color: #fff;
+    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
