@@ -1,10 +1,89 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800&display=swap');
+
 body {
     background-color: #000;
+    /* font-family: 'Marcellus', serif; */
+    font-family: 'Mulish', sans-serif;
 }
 
 .container {
     max-width: 1440px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+/* ====== header ===== */
+
+
+.header {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 54px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #fff;
+    opacity: 0.5;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link.active {
+    opacity: 1;
+    border-image: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    border-image-slice: 1;
+}
+
+.header-control-btn {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 75px;
+}
+
+.header-control-btn:last-of-type {
+    margin-right: 0;
+}
+
+.search-btn {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/search.svg);        
+}
+
+.notice-btn {
+    width: 22px;
+    height: 24px;
+    background-image: url(../img/notice.svg);
+}
+
+.user-btn {
+    width: 18px;
+    height: 19px;
+    background-image: url(../img/user.svg);
 }
