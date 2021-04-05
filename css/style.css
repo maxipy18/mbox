@@ -516,3 +516,38 @@ section {
 .offer-btn:active {
     border: 1px solid #000;
 }
+
+
+/* ====== footer ====== */
+
+
+.footer {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #101012;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-list-item {
+    margin-bottom: 10px;
+}
+
+.footer-list__link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #c2c2c2;    
+}
+
+.footer-list__link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
