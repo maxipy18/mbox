@@ -479,3 +479,46 @@ section {
     font-weight: 700;
     line-height: 20px;
 }
+
+
+/* ====== offer ====== */
+
+
+.offer {
+    max-width: 1224px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../img/offer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 71px 0;
+    padding-left: 57px;
+    border-radius: 20px;
+}
+
+.offer-title {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.offer-btn {
+    padding: 15px 30px;
+    border-radius: 100px;
+    outline: none;
+    border: 1px solid transparent;
+    color: #fff;
+    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5); 
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    cursor: pointer;
+    margin-left: 82px;
+}
+
+.offer-btn:active {
+    border: 1px solid #000;
+}
