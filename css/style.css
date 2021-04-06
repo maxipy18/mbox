@@ -361,6 +361,7 @@ section {
 .genres-link__img {
     width: 80px;
     height: 80px;
+    margin-bottom: 12px;
 }
 
 .romance {
@@ -521,18 +522,22 @@ section {
 /* ====== footer ====== */
 
 
+footer {
+    background-color: #101012;
+}
+
 .footer {
     padding-top: 70px;
     padding-bottom: 60px;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: #101012;
+    flex-wrap: wrap;    
 }
 
 .footer-list {
     list-style: none;
     padding-left: 0;
+    padding: 0 5px;
 }
 
 .footer-list-item {
@@ -550,4 +555,252 @@ section {
 .footer-list__link:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+
+/* ====== media ====== */
+
+
+@media (max-width: 1270px) {
+    
+    .shows, .movies, .actors {
+        margin: 0 auto;
+        max-width: 65%;        
+    }    
+    
+}
+
+@media (max-width: 1200px) {
+    .banner-item {
+        max-width: 450px;
+        padding-top: 70px;
+    }
+    
+    .banner-title {
+        font-size: 60px;
+    }
+
+    .shows, .movies, .actors {
+        justify-content: space-evenly;
+    }
+
+    .shows-item,
+    .movies-item,
+    .actors-item {
+        margin-bottom: 15px;
+    }
+
+    .offer {
+        justify-content: center;
+    }
+
+    .offer-title {
+        font-size: 50px;
+        padding-left: 0;        
+    }
+}
+
+@media (max-width: 992px) {    
+    
+
+    .nav-item {
+        margin-right: 30px;
+    }
+
+    .header-control-btn {
+        margin-right: 30px;
+    }
+
+    .banner {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner-item {
+        padding: 100px 0;
+        box-shadow: 0px 0px 0px #000000;
+    }
+
+    .banner-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    .banner-img__img {
+        width: 100%;
+    }
+
+    .shows, .movies, .actors {
+        max-width: 80%;
+    }
+
+    .announcement {
+        flex-direction: column;
+    }
+   
+    .announcement-item {
+        width: 90%; 
+        height:100%;
+        filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.1));        
+    }
+
+    .announcement-img {
+        border-radius: 20px 20px 0 0;
+    }   
+
+    .announcement-date {
+        padding: 20px 0;
+        border-radius: 0 0 20px 20px;
+        box-shadow: none;
+    }
+
+    .announcement-date__img {
+        margin-bottom: 20px;
+    }
+    
+    .announcement-date__title {
+        margin-bottom: 20px;
+    }
+
+    .offer {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .offer-title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .offer-btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .nav-list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-150%);
+    }
+
+    .nav-item {
+        margin-bottom: 15px;
+    }   
+
+    .shows, .movies, .actors {
+        max-width: 100%;
+    }
+
+    .genres {
+        justify-content: space-evenly;
+    }    
+
+    .announcement-date__img {
+        max-width: 50%;
+    }
+    
+}
+
+@media (max-width: 576px) {   
+
+    .banner-item {
+        padding: 50px 0;
+    }
+    .genres-item {
+        flex: 0 0 70%;
+    }  
+    
+    .announcement-date__img-img {
+        width: 100%;
+    }
+
+    .announcement-date__title {
+        font-size: 50px;
+    }
+
+    .offer-title {
+        font-size: 50px;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: left;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .header-logo {
+        max-width: 100px;
+    }
+
+    .header-logo-link {
+        width: 100%;
+    }
+
+    .header-logo-img {
+        width: 100%;
+    }
+
+    .header-control-btn {
+        margin-right: 20px;
+    }
+
+    .banner-info__time {
+        margin-right: 18px;
+    }
+
+    .banner-control {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .watch-btn {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .banner-img {
+        overflow: hidden;
+    }
+
+    .banner-img__img {
+        width: 300%;
+        transform: translateX(-40%);
+    }
+
+    .banner-info__year,
+    .banner-info__age,
+    .banner-info__time {
+        margin-right: 12px;
+    }
+
+    .announcement-date__img {
+        margin-bottom: 0px;
+    }
+    .announcement-date__title {
+        font-size: 30px;
+    }
+
+    .offer-title {
+        font-size: 35px;
+    }
 }
