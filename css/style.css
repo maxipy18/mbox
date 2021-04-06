@@ -752,7 +752,7 @@ footer {
     }
     .genres-item {
         flex: 0 0 70%;
-    }  
+    } 
     
     .announcement-date__img-img {
         width: 100%;
@@ -837,7 +837,19 @@ footer {
         margin-right: 12px;
     }
 
-    .announcement-date__img {
+    .shows-item,
+    .movies-item,
+    .actors-item {
+        flex: 0 0 70%;
+    }
+
+    .shows-item__img,
+    .movies-item__img,
+    .actors-img__img {
+        width: 100%;
+    }
+
+        .announcement-date__img {
         margin-bottom: 0px;
     }
     .announcement-date__title {
