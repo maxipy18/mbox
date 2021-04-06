@@ -96,6 +96,10 @@ section {
     border-image-slice: 1;
 }
 
+.header-control {
+    display: flex;
+}
+
 .header-control-btn {
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,6 +133,17 @@ section {
     background-image: url(../img/user.svg);
 }
 
+.burger {
+    width: 25px;
+    height: 18px;
+    background: linear-gradient(to top, #fff 10%, transparent 11%, transparent 30%, #fff 31%, #fff 40%, transparent 41%, transparent 60%, #fff 61%, #fff 70%, transparent 71%, transparent 90%, #fff 91%, #fff 100%);
+    cursor: pointer;
+    display: none;    
+}
+
+.burger.active {
+    background: linear-gradient(45deg, transparent 45%, #fff 46%, #fff 55%, transparent 56%, transparent 100%), linear-gradient(-45deg, transparent 45%, #fff 46%, #fff 55%, transparent 56%, transparent 100%);
+}
 
 /* ====== banner ======= */
 
@@ -690,12 +705,17 @@ footer {
         position: absolute;
         display: flex;
         flex-direction: column;
-        transform: translateY(-150%);
+        transform: translateY(-200%);
     }
 
     .nav-item {
         margin-bottom: 15px;
-    }   
+    }
+    
+    .burger {
+        display: block;
+        margin-left: 20px;
+    }
 
     .shows, .movies, .actors {
         max-width: 100%;
@@ -746,16 +766,21 @@ footer {
         font-size: 20px;
     }
 
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .header-logo {
-        max-width: 100px;
+        margin-bottom: 10px;
+        padding-left: 0;
     }
-
-    .header-logo-link {
+    
+    .header-control {
         width: 100%;
-    }
-
-    .header-logo-img {
-        width: 100%;
+        justify-content: space-between;
     }
 
     .header-control-btn {
