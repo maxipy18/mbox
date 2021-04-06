@@ -703,9 +703,22 @@ footer {
 
     .nav-list {
         position: absolute;
-        display: flex;
-        flex-direction: column;
+        display: flex;        
+        top: 0;
+        left: 0;
         transform: translateY(-200%);
+        transition: 0.3s;
+    }   
+
+    .nav-list.active {
+        top: -5px;
+        left: 0;
+        padding-top: 25px;
+        width: 100vw;
+        height: 100%;
+        background:rgba(0, 0, 0, 0.9);
+        transform: translateY(0);  
+        z-index: 1;      
     }
 
     .nav-item {
@@ -714,6 +727,7 @@ footer {
     
     .burger {
         display: block;
+        z-index: 5;
         margin-left: 20px;
     }
 
@@ -776,6 +790,11 @@ footer {
     .header-logo {
         margin-bottom: 10px;
         padding-left: 0;
+    }
+
+    .nav-list.active {
+        flex-direction: column;
+        padding-top: 0;
     }
     
     .header-control {
